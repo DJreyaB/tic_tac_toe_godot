@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq7oy7t8tw84m"]
+
+[ext_resource type="Texture2D" uid="uid://tw7v2cjqxilq" path="res://assets/icons_png/tic_tac_toe_board.png" id="1_p0ybc"]
+
+[node name="Board" type="Sprite2D"]
+
+[node name="TicTacToeBoard" type="Sprite2D" parent="."]
+position = Vector2(297.5, 302)
+scale = Vector2(0.268636, 0.268182)
+texture = ExtResource("1_p0ybc")
