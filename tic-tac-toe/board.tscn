@@ -1,10 +1,16 @@
 [gd_scene load_steps=2 format=3 uid="uid://bq7oy7t8tw84m"]
 
-[ext_resource type="Texture2D" uid="uid://tw7v2cjqxilq" path="res://assets/icons_png/tic_tac_toe_board.png" id="1_p0ybc"]
+[sub_resource type="CanvasTexture" id="CanvasTexture_4mug4"]
 
 [node name="Board" type="Sprite2D"]
 
-[node name="TicTacToeBoard" type="Sprite2D" parent="."]
-position = Vector2(297.5, 302)
-scale = Vector2(0.268636, 0.268182)
-texture = ExtResource("1_p0ybc")
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.165656, 0.165656, 0.165656, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 601.0
+offset_bottom = 795.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_4mug4")

@@ -1,11 +1,39 @@
-[gd_scene load_steps=3 format=3 uid="uid://ccm61w076kj6w"]
+[gd_scene load_steps=4 format=3 uid="uid://ccm61w076kj6w"]
 
 [ext_resource type="Script" uid="uid://cw2pngd73e5w2" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bq7oy7t8tw84m" path="res://board.tscn" id="1_ig7tw"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_0xm2m"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_0xm2m")
 
 [node name="Board" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(303, 284)
-scale = Vector2(0.29, 0.29)
+position = Vector2(0, 3)
+
+[node name="QuitRestartBtn" type="TextureRect" parent="."]
+modulate = Color(0.364706, 0.34902, 1, 1)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -65.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("CanvasTexture_0xm2m")
+
+[node name="QuitRestartTxt" type="RichTextLabel" parent="QuitRestartBtn"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/bold_italics_font_size = 65
+theme_override_font_sizes/normal_font_size = 65
+text = "Restart"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
