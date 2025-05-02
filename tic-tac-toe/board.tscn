@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bq7oy7t8tw84m"]
+[gd_scene load_steps=3 format=3 uid="uid://bq7oy7t8tw84m"]
+
+[ext_resource type="Script" uid="uid://oxt65lmlqguo" path="res://board.gd" id="1_p0ybc"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_4mug4"]
 
 [node name="Board" type="Sprite2D"]
+script = ExtResource("1_p0ybc")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(0.165656, 0.165656, 0.165656, 1)
@@ -14,3 +17,43 @@ offset_bottom = 795.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("CanvasTexture_4mug4")
+
+[node name="BoardCont" type="VBoxContainer" parent="."]
+offset_right = 602.0
+offset_bottom = 602.0
+
+[node name="col1" type="HBoxContainer" parent="BoardCont"]
+layout_mode = 2
+
+[node name="TextureButton1" type="TextureButton" parent="BoardCont/col1"]
+layout_mode = 2
+
+[node name="TextureButton2" type="TextureButton" parent="BoardCont/col1"]
+layout_mode = 2
+
+[node name="TextureButton3" type="TextureButton" parent="BoardCont/col1"]
+layout_mode = 2
+
+[node name="col2" type="HBoxContainer" parent="BoardCont"]
+layout_mode = 2
+
+[node name="TextureButton4" type="TextureButton" parent="BoardCont/col2"]
+layout_mode = 2
+
+[node name="TextureButton5" type="TextureButton" parent="BoardCont/col2"]
+layout_mode = 2
+
+[node name="TextureButton6" type="TextureButton" parent="BoardCont/col2"]
+layout_mode = 2
+
+[node name="col3" type="HBoxContainer" parent="BoardCont"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="BoardCont/col3"]
+layout_mode = 2
+
+[node name="TextureButton2" type="TextureButton" parent="BoardCont/col3"]
+layout_mode = 2
+
+[node name="TextureButton3" type="TextureButton" parent="BoardCont/col3"]
+layout_mode = 2
