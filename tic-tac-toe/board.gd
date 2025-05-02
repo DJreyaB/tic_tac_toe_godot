@@ -13,6 +13,7 @@ var player_o = preload("res://assets/icons_png/o_icon.png")
 
 
 func initiate_board() -> void:
+	# why not make this an array of arrays
 	board =[
 		"0", "0", "0",
 		"0", "0", "0",
@@ -30,5 +31,7 @@ func is_row_matched() -> void:
 	pass
 	#check that the abs(sum(row)) = 3 then match
 	# else not a match
+	
+
 	
 	
